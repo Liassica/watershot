@@ -17,7 +17,10 @@ in {
       "res"
     ];
 
-    cargoLock.lockFile = self + "/Cargo.lock";
+    cargoLock = {
+      lockFile = self + "/Cargo.lock";
+      outputHashes."hyprland-0.4.0-alpha.2" = "sha256-bvjvN3vi82Ys3zqY1mqYxRjbUwwcqZ6b0X3aF8Wb2Is=";
+    };
 
     nativeBuildInputs = with nixpkgs; [
       pkg-config

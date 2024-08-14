@@ -793,8 +793,7 @@ checksum = "dfa686283ad6dd069f105e5ab091b04c62850d3e4cf5d67debad1933f55023df"
 [[package]]
 name = "hyprland"
 version = "0.4.0-alpha.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d627cd06fb3389f2554b7a4bb21db8c0bfca8863e6e653702cc4c6dbf20d8276"
+source = "git+https://github.com/hyprland-community/hyprland-rs#116305ab39c69b72e9f19162c4264dbec86be5dd"
 dependencies = [
  "ahash",
  "derive_more",
@@ -811,9 +810,8 @@ dependencies = [
 
 [[package]]
 name = "hyprland-macros"
-version = "0.4.0-alpha.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5dd8ce4c182ce77e485918f49262425ee51a2746fe97f14084869aeff2fbc38e"
+version = "0.4.0-alpha.2"
+source = "git+https://github.com/hyprland-community/hyprland-rs#116305ab39c69b72e9f19162c4264dbec86be5dd"
 dependencies = [
  "quote",
  "syn 2.0.37",
@@ -1768,7 +1766,19 @@ dependencies = [
  "mio",
  "pin-project-lite",
  "socket2",
+ "tokio-macros",
  "windows-sys",
+]
+
+[[package]]
+name = "tokio-macros"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "630bdcf245f78637c13ec01ffae6187cca34625e8c63150d424b59e55af2675e"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.37",
 ]
 
 [[package]]
